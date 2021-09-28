@@ -1,0 +1,5 @@
+import pandas as pd
+data_url="/content/products.csv"
+df=pd.read_csv(data_url,index_col=1)
+
+df['name'].value_counts()
